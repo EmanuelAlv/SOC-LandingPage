@@ -1,0 +1,128 @@
+:root {
+    --dark-blue: #000814;
+    --mid-blue: #001D3D;
+    --light-blue: #003566;
+    --mid-blue2: #0b1927;
+    --light-blue2: #2c3741;
+    --mostaza: #FFC300;
+    --yellow: #FFD60A;
+    --white: #ffffffd7;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* NAVBAR */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    background-color: var(--dark-blue);
+    padding: 20px;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-div{
+    width: 44px;
+}
+.navbar-burguerMenu img{
+    width: 24px;
+}
+/*  */
+.mobile-menu {
+    background-color: var(--dark-blue);
+    position: absolute;
+    top: 59px;
+    left: 0px;
+    width: 100%;
+    padding: 24px;
+  }
+  .mobile-menu a {
+    font-size: 22px;
+    color: var(--black);
+    font-weight: bold;
+  }
+  .mobile-menu ul {
+    padding: 0;
+    text-align: center;
+    color: white;
+    /* margin: 24px 0 0; */
+    list-style: none;
+  }
+  .mobile-menu ul li{
+    margin-bottom: 44px;
+  }
+  /*  */
+.navbar-logo{display: flex;
+    align-items: center;
+}
+.navbar-logo img{
+    width: 40px;
+    height: 44px;
+}
+.navbar-options{
+    display: flex;
+}
+.inactive{
+    display: none;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+/* Sections */
+.sections{
+    width: 100%;
+    height: 50vh;
+}
+.par{
+    padding: 12px;
+    background-color: var(--light-blue2);
+}
+.impar{
+    padding: 12px;
+    background-color: var(--mid-blue2);
+}
+.hero
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    padding: 0;
+}
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+/* Footer */
+footer{
+    padding: 12px 0 12px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: var(--dark-blue);
+}
+footer p, a{
+    font-weight: 100;
+    font-size: 14px;
+    text-align: center;
+    color: var(--white);
+}
